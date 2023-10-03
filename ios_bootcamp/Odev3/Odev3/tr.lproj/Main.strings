@@ -1,0 +1,54 @@
+
+/* Class = "UILabel"; text = "Protein"; ObjectID = "1rq-S4-gxh"; */
+"1rq-S4-gxh.text" = "Protein";
+
+/* Class = "UILabel"; text = "Medium 12''"; ObjectID = "2IZ-rp-yaI"; */
+"2IZ-rp-yaI.text" = "Orta 30cm";
+
+/* Class = "UILabel"; text = "45%"; ObjectID = "3pX-eB-G7g"; */
+"3pX-eB-G7g.text" = "%45";
+
+/* Class = "UIButton"; configuration.title = "Please Order"; ObjectID = "4Db-h1-G3O"; */
+"4Db-h1-G3O.configuration.title" = "Sipariş Oluşturun";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "4Db-h1-G3O"; */
+"4Db-h1-G3O.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "20 Min.."; ObjectID = "67H-I6-GHr"; */
+"67H-I6-GHr.text" = "20 Dk..";
+
+/* Class = "UILabel"; text = "$12.00"; ObjectID = "A5p-yL-kne"; */
+"A5p-yL-kne.text" = "300.00₺";
+
+/* Class = "UILabel"; text = "Thin Crust"; ObjectID = "HQa-pI-2lQ"; */
+"HQa-pI-2lQ.text" = "İnce Hamur";
+
+/* Class = "UILabel"; text = "20%"; ObjectID = "MEH-ww-uBx"; */
+"MEH-ww-uBx.text" = "%20";
+
+/* Class = "UILabel"; text = "Fruit Summary"; ObjectID = "Tcb-Dz-8Gy"; */
+"Tcb-Dz-8Gy.text" = "İçerik Özeti";
+
+/* Class = "UILabel"; text = "Carbs"; ObjectID = "apN-4d-hr3"; */
+"apN-4d-hr3.text" = "Karbonhidrat";
+
+/* Class = "UILabel"; text = "Fat"; ObjectID = "d4t-1x-M7I"; */
+"d4t-1x-M7I.text" = "Yağ";
+
+/* Class = "UILabel"; text = "Crust"; ObjectID = "gTS-eH-nq2"; */
+"gTS-eH-nq2.text" = "Hamur";
+
+/* Class = "UILabel"; text = "Size"; ObjectID = "nEq-fE-aaA"; */
+"nEq-fE-aaA.text" = "Boyut";
+
+/* Class = "UILabel"; text = "Mushrooms"; ObjectID = "phe-S8-u6M"; */
+"phe-S8-u6M.text" = "Mantarlar";
+
+/* Class = "UILabel"; text = "Mushrooms"; ObjectID = "qTW-rL-iJT"; */
+"qTW-rL-iJT.text" = "Mantarlar";
+
+/* Class = "UILabel"; text = "35%"; ObjectID = "xr7-gb-UgL"; */
+"xr7-gb-UgL.text" = "%35";
+
+/* Class = "UILabel"; text = "Time"; ObjectID = "zIX-aw-XkS"; */
+"zIX-aw-XkS.text" = "Süre";
