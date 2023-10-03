@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TE6-PD-RKp">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Anasayfa KitapVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="AnasayfaKitapVC" customModule="Odev4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AskVeGurur" translatesAutoresizingMaskIntoConstraints="NO" id="yH0-Iu-Wlw">
+                                <rect key="frame" x="46.666666666666657" y="203" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="cZ4-te-2U2"/>
+                                    <constraint firstAttribute="height" constant="300" id="phM-dw-6Pu"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UiG-Ht-Cq5">
+                                <rect key="frame" x="140.66666666666666" y="643" width="112" height="34"/>
+                                <color key="backgroundColor" red="0.51417505741119385" green="0.71533459424972534" blue="0.56019347906112671" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Kitap Detay">
+                                    <fontDescription key="titleFontDescription" name=".SFNS-Regular" family=".AppleSystemUIFont" pointSize="18"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="17"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonKitapDetay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oRL-vz-Yno"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Elizabeth &amp; Darcy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tri-DU-i0Q">
+                                <rect key="frame" x="113" y="548" width="167" height="28"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="UiG-Ht-Cq5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4iw-5H-CkH"/>
+                            <constraint firstItem="UiG-Ht-Cq5" firstAttribute="top" secondItem="yH0-Iu-Wlw" secondAttribute="bottom" constant="140" id="Ulj-tQ-rW1"/>
+                            <constraint firstItem="yH0-Iu-Wlw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="XiA-vL-yBp"/>
+                            <constraint firstItem="tri-DU-i0Q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iNJ-94-GGR"/>
+                            <constraint firstItem="yH0-Iu-Wlw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="inI-2T-jIW"/>
+                            <constraint firstItem="tri-DU-i0Q" firstAttribute="top" secondItem="yH0-Iu-Wlw" secondAttribute="bottom" constant="45" id="wD4-nc-3jD"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="M50-h5-GE3"/>
+                    <connections>
+                        <segue destination="V8K-eA-z5U" kind="show" identifier="kitapDetayGecis" id="A0u-NF-ktH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2124" y="-304"/>
+        </scene>
+        <!--Yazar DetayVC-->
+        <scene sceneID="n6M-NB-lIz">
+            <objects>
+                <viewController id="8BG-nF-XoQ" customClass="YazarDetayVC" customModule="Odev4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kcF-Gr-h4M">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="JaneAusten" translatesAutoresizingMaskIntoConstraints="NO" id="CO1-z2-EbL">
+                                <rect key="frame" x="46.666666666666657" y="119" width="300" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="1no-I1-OH2"/>
+                                    <constraint firstAttribute="width" constant="300" id="Wig-2S-Ble"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JANE AUSTEN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="67o-Ts-XkK">
+                                <rect key="frame" x="139" y="349" width="115" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jane Austen (16 Aralık 1775 - 18 Temmuz 1817) 19. yüzyılda yaşamış İngiliz roman yazarı." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KC0-Wn-uoI">
+                                <rect key="frame" x="16" y="399.33333333333331" width="361" height="40.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ROMANLARI" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ztg-QO-jfj">
+                                <rect key="frame" x="25" y="470" width="86" height="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="PMy-rT-9dO">
+                                <rect key="frame" x="35" y="502" width="151.66666666666666" height="151"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sense and Sensibility" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GMB-8x-kJm">
+                                        <rect key="frame" x="0.0" y="0.0" width="151.66666666666666" height="19.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pride and Prejudice" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yzf-1p-34l">
+                                        <rect key="frame" x="0.0" y="26.333333333333371" width="151.66666666666666" height="19.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mansfield Park" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r6Q-w6-uuK">
+                                        <rect key="frame" x="0.0" y="52.666666666666629" width="151.66666666666666" height="19.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emma" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="55u-KR-Q71">
+                                        <rect key="frame" x="0.0" y="79" width="151.66666666666666" height="19.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Northanger Abbey" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zJa-Ji-xID">
+                                        <rect key="frame" x="0.0" y="105.33333333333337" width="151.66666666666666" height="19.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Persuasion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3vb-NB-IJU">
+                                        <rect key="frame" x="0.0" y="131.66666666666663" width="151.66666666666666" height="19.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="3vb-NB-IJU" firstAttribute="centerX" secondItem="GMB-8x-kJm" secondAttribute="centerX" id="3ag-jz-Aqq"/>
+                                    <constraint firstItem="zJa-Ji-xID" firstAttribute="centerX" secondItem="GMB-8x-kJm" secondAttribute="centerX" id="nhL-NP-JRS"/>
+                                    <constraint firstItem="55u-KR-Q71" firstAttribute="centerX" secondItem="GMB-8x-kJm" secondAttribute="centerX" id="pSZ-BI-Wnd"/>
+                                    <constraint firstItem="Yzf-1p-34l" firstAttribute="centerX" secondItem="GMB-8x-kJm" secondAttribute="centerX" id="t71-Xz-tTj"/>
+                                    <constraint firstItem="r6Q-w6-uuK" firstAttribute="centerX" secondItem="GMB-8x-kJm" secondAttribute="centerX" id="x7K-T7-3iy"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Wb-KZ-MuL">
+                                <rect key="frame" x="138" y="654.66666666666663" width="117.33333333333331" height="34.333333333333371"/>
+                                <color key="backgroundColor" red="0.51416164636611938" green="0.71534150838851929" blue="0.90312093496322632" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Giriş Sayfası"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="17"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="anasayfaKitap:" destination="8BG-nF-XoQ" eventType="touchUpInside" id="sNu-hI-T48"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="WXc-LQ-9sK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="WXc-LQ-9sK" firstAttribute="bottom" secondItem="3Wb-KZ-MuL" secondAttribute="bottom" constant="80" id="13g-Lx-D8Q"/>
+                            <constraint firstAttribute="trailing" secondItem="KC0-Wn-uoI" secondAttribute="trailing" constant="16" id="9cj-f9-QgZ"/>
+                            <constraint firstItem="3Wb-KZ-MuL" firstAttribute="centerX" secondItem="kcF-Gr-h4M" secondAttribute="centerX" id="Cdu-3Y-SRk"/>
+                            <constraint firstItem="KC0-Wn-uoI" firstAttribute="centerX" secondItem="kcF-Gr-h4M" secondAttribute="centerX" id="Gvu-9y-bcU"/>
+                            <constraint firstItem="ztg-QO-jfj" firstAttribute="leading" secondItem="WXc-LQ-9sK" secondAttribute="leading" constant="25" id="L8v-qX-KjG"/>
+                            <constraint firstItem="KC0-Wn-uoI" firstAttribute="leading" secondItem="kcF-Gr-h4M" secondAttribute="leading" constant="16" id="TTj-wU-icb"/>
+                            <constraint firstItem="PMy-rT-9dO" firstAttribute="leading" secondItem="WXc-LQ-9sK" secondAttribute="leading" constant="35" id="XSd-Ve-X2p"/>
+                            <constraint firstItem="67o-Ts-XkK" firstAttribute="top" secondItem="CO1-z2-EbL" secondAttribute="bottom" constant="30" id="Xzf-Q8-j3d"/>
+                            <constraint firstItem="ztg-QO-jfj" firstAttribute="top" secondItem="KC0-Wn-uoI" secondAttribute="bottom" constant="30" id="dYg-4D-9x8"/>
+                            <constraint firstItem="CO1-z2-EbL" firstAttribute="centerX" secondItem="kcF-Gr-h4M" secondAttribute="centerX" id="eEk-Kd-dVD"/>
+                            <constraint firstItem="67o-Ts-XkK" firstAttribute="centerX" secondItem="kcF-Gr-h4M" secondAttribute="centerX" id="gb0-s7-D1b"/>
+                            <constraint firstItem="KC0-Wn-uoI" firstAttribute="top" secondItem="67o-Ts-XkK" secondAttribute="bottom" constant="30" id="lIC-Go-B2h"/>
+                            <constraint firstItem="PMy-rT-9dO" firstAttribute="top" secondItem="ztg-QO-jfj" secondAttribute="bottom" constant="15" id="p4A-RN-ZBZ"/>
+                            <constraint firstItem="CO1-z2-EbL" firstAttribute="top" secondItem="WXc-LQ-9sK" secondAttribute="top" constant="16" id="rXO-vW-NNl"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="drY-YB-LKc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vvI-9F-Grl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3123" y="441"/>
+        </scene>
+        <!--YazarVC-->
+        <scene sceneID="IhZ-W0-Iij">
+            <objects>
+                <viewController id="5k1-nc-5uw" customClass="YazarVC" customModule="Odev4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0Ce-Bt-uW7">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="JaneAusten" translatesAutoresizingMaskIntoConstraints="NO" id="oC3-5f-zAG">
+                                <rect key="frame" x="81.666666666666686" y="203" width="230" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="230" id="SgD-Li-Cuq"/>
+                                    <constraint firstAttribute="height" constant="300" id="kWh-8q-Tdr"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XXv-Qe-JF8">
+                                <rect key="frame" x="140.33333333333334" y="643" width="112.66666666666666" height="34"/>
+                                <color key="backgroundColor" red="0.51416164636611938" green="0.71534150838851929" blue="0.90312093496322632" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Yazar Detay">
+                                    <fontDescription key="titleFontDescription" name=".SFNS-Regular" family=".AppleSystemUIFont" pointSize="18"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="17"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonYazarDetay:" destination="5k1-nc-5uw" eventType="touchUpInside" id="1Bb-BI-YYR"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jane Austen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pXL-dT-UvK">
+                                <rect key="frame" x="140" y="508" width="113.33333333333331" height="27"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="HdR-2P-J8k"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="XXv-Qe-JF8" firstAttribute="centerX" secondItem="0Ce-Bt-uW7" secondAttribute="centerX" id="1uf-xy-LRR"/>
+                            <constraint firstItem="pXL-dT-UvK" firstAttribute="centerX" secondItem="0Ce-Bt-uW7" secondAttribute="centerX" id="HjA-dj-UFf"/>
+                            <constraint firstItem="pXL-dT-UvK" firstAttribute="top" secondItem="oC3-5f-zAG" secondAttribute="bottom" constant="5" id="MUa-6l-0qe"/>
+                            <constraint firstItem="oC3-5f-zAG" firstAttribute="top" secondItem="HdR-2P-J8k" secondAttribute="top" constant="100" id="UOd-Ey-yN8"/>
+                            <constraint firstItem="XXv-Qe-JF8" firstAttribute="top" secondItem="oC3-5f-zAG" secondAttribute="bottom" constant="140" id="vZo-YH-Bg3"/>
+                            <constraint firstItem="oC3-5f-zAG" firstAttribute="centerX" secondItem="0Ce-Bt-uW7" secondAttribute="centerX" id="zU1-UV-iHc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="YzQ-f0-9Vu"/>
+                    <connections>
+                        <segue destination="8BG-nF-XoQ" kind="show" identifier="yazarDetayGecis" id="9mz-9W-fht"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K4e-HZ-MlO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2123" y="441"/>
+        </scene>
+        <!--Kitap DetayVC-->
+        <scene sceneID="mvE-al-thC">
+            <objects>
+                <viewController id="V8K-eA-z5U" customClass="KitapDetayVC" customModule="Odev4" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="t15-EL-M5p">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AskVeGurur" translatesAutoresizingMaskIntoConstraints="NO" id="E03-D8-8sA">
+                                <rect key="frame" x="46.666666666666657" y="119" width="300" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="8WX-aD-yIW"/>
+                                    <constraint firstAttribute="width" constant="300" id="JpW-gr-gqD"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GURUR VE ÖNYARGI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gsS-Eq-m2B">
+                                <rect key="frame" x="90.666666666666671" y="349" width="211.66666666666663" height="27.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JANE AUSTEN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccS-Fj-Vtx">
+                                <rect key="frame" x="155.66666666666666" y="391.66666666666669" width="82" height="14.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Y7-UL-Naa">
+                                <rect key="frame" x="125.66666666666667" y="654.66666666666663" width="141.66666666666663" height="34.333333333333371"/>
+                                <color key="backgroundColor" red="0.51417505741119385" green="0.71533459424972534" blue="0.56019347906112671" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Yazar Hakkında"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="17"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonYazarHakkinda:" destination="V8K-eA-z5U" eventType="touchUpInside" id="Cbd-Y2-nR9"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rny-pL-8Q1">
+                                <rect key="frame" x="16" y="436" width="361" height="71.666666666666686"/>
+                                <string key="text">Gurur ve Önyargı (özgün adıyla Pride and Prejudice), İngiliz yazar Jane Austen'in ikinci romandır. 18 Ocak 1813'te yayımlanan roman, 1796-1797 yılları arasında kaleme alınmıştır.</string>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ANA KARAKTERLER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m6g-Nx-O5u">
+                                <rect key="frame" x="25" y="537.66666666666663" width="137.33333333333334" height="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="Idu-ZN-59V">
+                                <rect key="frame" x="35.000000000000007" y="569.66666666666663" width="120.66666666666669" height="45.666666666666629"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fitzwilliam Darcy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eFS-Yh-PMm">
+                                        <rect key="frame" x="0.0" y="0.0" width="120.66666666666667" height="19.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Elizabeth Bennet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tFM-wp-JyW">
+                                        <rect key="frame" x="0.0" y="26.333333333333371" width="120.66666666666667" height="19.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="SVA-sV-sCk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gsS-Eq-m2B" firstAttribute="top" secondItem="E03-D8-8sA" secondAttribute="bottom" constant="30" id="9nk-J3-cGe"/>
+                            <constraint firstItem="E03-D8-8sA" firstAttribute="top" secondItem="SVA-sV-sCk" secondAttribute="top" constant="16" id="Dyc-1E-Vdl"/>
+                            <constraint firstItem="Idu-ZN-59V" firstAttribute="top" secondItem="m6g-Nx-O5u" secondAttribute="bottom" constant="15" id="HY8-I2-f0h"/>
+                            <constraint firstItem="rny-pL-8Q1" firstAttribute="top" secondItem="ccS-Fj-Vtx" secondAttribute="bottom" constant="30" id="Hpp-OZ-VtV"/>
+                            <constraint firstItem="Idu-ZN-59V" firstAttribute="leading" secondItem="SVA-sV-sCk" secondAttribute="leading" constant="35" id="IBT-Vg-1OO"/>
+                            <constraint firstItem="rny-pL-8Q1" firstAttribute="leading" secondItem="t15-EL-M5p" secondAttribute="leading" constant="16" id="OYz-fV-Ibc"/>
+                            <constraint firstItem="7Y7-UL-Naa" firstAttribute="centerX" secondItem="t15-EL-M5p" secondAttribute="centerX" id="Wy1-Wc-Qa9"/>
+                            <constraint firstItem="ccS-Fj-Vtx" firstAttribute="top" secondItem="gsS-Eq-m2B" secondAttribute="bottom" constant="15" id="YbY-oC-REN"/>
+                            <constraint firstItem="ccS-Fj-Vtx" firstAttribute="centerX" secondItem="t15-EL-M5p" secondAttribute="centerX" id="b8a-p6-Eqo"/>
+                            <constraint firstItem="rny-pL-8Q1" firstAttribute="centerX" secondItem="t15-EL-M5p" secondAttribute="centerX" id="fdC-po-JwG"/>
+                            <constraint firstItem="m6g-Nx-O5u" firstAttribute="leading" secondItem="t15-EL-M5p" secondAttribute="leading" constant="25" id="h4J-2w-sLP"/>
+                            <constraint firstItem="gsS-Eq-m2B" firstAttribute="centerX" secondItem="t15-EL-M5p" secondAttribute="centerX" id="h5h-rV-chT"/>
+                            <constraint firstAttribute="trailing" secondItem="rny-pL-8Q1" secondAttribute="trailing" constant="16" id="ixw-tv-0l8"/>
+                            <constraint firstItem="E03-D8-8sA" firstAttribute="centerX" secondItem="t15-EL-M5p" secondAttribute="centerX" id="pna-JM-gdT"/>
+                            <constraint firstItem="m6g-Nx-O5u" firstAttribute="top" secondItem="rny-pL-8Q1" secondAttribute="bottom" constant="30" id="s1K-s9-ueb"/>
+                            <constraint firstItem="SVA-sV-sCk" firstAttribute="bottom" secondItem="7Y7-UL-Naa" secondAttribute="bottom" constant="80" id="xxE-g8-Gee"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="aH8-HY-rGc"/>
+                    <connections>
+                        <segue destination="8BG-nF-XoQ" kind="show" identifier="kitaptanYazaraGecis" id="H4k-92-R5P"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ggT-m8-m9B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3122.9007633587785" y="-304.22535211267609"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="2p2-lD-j01">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="TE6-PD-RKp" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kLo-5x-gby">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="3pE-ei-aA1" kind="relationship" relationship="viewControllers" id="CJC-WF-kB8"/>
+                        <segue destination="9ij-Rx-GsS" kind="relationship" relationship="viewControllers" id="xMj-w2-zmU"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I4z-kH-eWc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
+        </scene>
+        <!--Kitap-->
+        <scene sceneID="OkE-yW-1zC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3pE-ei-aA1" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Kitap" id="ldr-PU-oz1">
+                        <imageReference key="image" image="book.closed" catalog="system"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="WgI-sx-yWU">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="pp3-oD-9UC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0cA-Kg-k0g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="965.64885496183206" y="-304.22535211267609"/>
+        </scene>
+        <!--Yazar-->
+        <scene sceneID="8Ed-pe-B0o">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ROr-Wz-VF1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9ij-Rx-GsS" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Yazar" id="xNu-7t-dii">
+                        <imageReference key="image" image="person.crop.rectangle" catalog="system"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qud-3I-8YR">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="5k1-nc-5uw" kind="relationship" relationship="rootViewController" id="Voa-BV-ZPz"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="965.64885496183206" y="440.84507042253523"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="9mz-9W-fht"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="AskVeGurur" width="399" height="600"/>
+        <image name="JaneAusten" width="532" height="532"/>
+        <image name="book.closed" catalog="system" width="115" height="128"/>
+        <image name="person.crop.rectangle" catalog="system" width="128" height="93"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

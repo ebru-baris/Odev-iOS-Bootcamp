@@ -1,0 +1,54 @@
+
+/* Class = "UIButton"; configuration.title = "Add to Order"; ObjectID = "0kZ-RT-gGY"; */
+"0kZ-RT-gGY.configuration.title" = "Sipariş Ekle";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "0kZ-RT-gGY"; */
+"0kZ-RT-gGY.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "M"; ObjectID = "32N-rD-pnB"; */
+"32N-rD-pnB.configuration.title" = "O";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "32N-rD-pnB"; */
+"32N-rD-pnB.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "-"; ObjectID = "QU2-X1-UR9"; */
+"QU2-X1-UR9.configuration.title" = "-";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "QU2-X1-UR9"; */
+"QU2-X1-UR9.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "S"; ObjectID = "X89-xa-gk4"; */
+"X89-xa-gk4.configuration.title" = "K";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "X89-xa-gk4"; */
+"X89-xa-gk4.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Extreme cheese whopper JR"; ObjectID = "XQq-Sj-NPW"; */
+"XQq-Sj-NPW.text" = "Aşırı peynirli whopper JR";
+
+/* Class = "UILabel"; text = "Price"; ObjectID = "Xcm-pT-JcG"; */
+"Xcm-pT-JcG.text" = "Fiyat";
+
+/* Class = "UIButton"; configuration.title = "2"; ObjectID = "YpW-YU-gYg"; */
+"YpW-YU-gYg.configuration.title" = "2";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "YpW-YU-gYg"; */
+"YpW-YU-gYg.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "+"; ObjectID = "en1-0a-gvF"; */
+"en1-0a-gvF.configuration.title" = "+";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "en1-0a-gvF"; */
+"en1-0a-gvF.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "A signature flame-grilled beef patty topped with smoked bacon."; ObjectID = "jbH-Rv-XVt"; */
+"jbH-Rv-XVt.text" = "Üstünde füme pastırması bulunan, alevde ızgaralanmış özel bir sığır köftesi.";
+
+/* Class = "UILabel"; text = "$ 5.99"; ObjectID = "uOh-ha-wic"; */
+"uOh-ha-wic.text" = "180 ₺";
+
+/* Class = "UIButton"; configuration.title = "L"; ObjectID = "xQb-KF-ZyP"; */
+"xQb-KF-ZyP.configuration.title" = "B";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "xQb-KF-ZyP"; */
+"xQb-KF-ZyP.normalTitle" = "Button";
